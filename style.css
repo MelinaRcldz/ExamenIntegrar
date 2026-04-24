@@ -1,0 +1,168 @@
+ body {
+      font-family: Georgia, serif;
+      margin: 0;
+      /* Error: bajo contraste — texto gris claro sobre fondo casi blanco */
+      color: #f5f5f5;
+      background: #624c4c;
+    }
+
+    .header {
+      background: #1a1a2e;
+      padding: 16px 40px;
+      border-bottom: 3px solid #e94560;
+    }
+
+    .logo {
+      color: #e94560;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    /* Error: sin flexbox, navegación con display inline-block */
+    .nav-links a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      /* Error: muy bajo contraste sobre fondo oscuro */
+      color: #f5f5f5;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      background: #16213e;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #e94560;
+    }
+
+    .class-badge {
+      display: inline-block;
+      background: #a5263b;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 8px;
+      /* Error: texto de badge también con bajo contraste */
+      color: #fcfcfc;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      /* Error: color de encabezado con bajo contraste */
+      color: #ccc;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #e94560;
+      padding-bottom: 8px;
+    }
+
+    .stats-section {
+      padding: 60px 40px;
+      background: #0f3460;
+    }
+
+    /* Error: grilla de stats con float en lugar de CSS Grid */
+    .stats-grid {
+      overflow: hidden;
+    }
+
+    .stat-card {
+      float: left;
+      width: 22%;
+      margin: 1.5%;
+      background: #16213e;
+      border: 1px solid #e94560;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #d0cece;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      /* Error: bajo contraste */
+      color: #d0cece;
+    }
+
+    .skills-section {
+      padding: 60px 40px;
+      background: #1a1a2e;
+    }
+
+    .skill-card {
+      border: 1px solid #e94560;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      background: #16213e;
+    }
+
+    .skill-cost {
+      font-size: 0.8rem;
+      /* Error: bajo contraste */
+      color: #f5f5f5;
+      margin-top: 4px;
+    }
+
+    .tags {
+      margin-top: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #b0293f;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      margin-right: 4px;
+      color: #f5f2f2;
+    }
+
+    .challenge-section {
+      padding: 60px 40px;
+      background: #0f3460;
+    }
+
+    /* Error: campos sin estilos accesibles, sin indicador de foco visible */
+    input, select {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin-bottom: 14px;
+      border: 1px solid #e94560;
+      background: #16213e;
+      color: #bbb;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 28px;
+      background: #b60926;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .footer {
+      background: #1a1a2e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #e94560;
+    }
