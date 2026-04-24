@@ -1,4 +1,7 @@
- body {
+* {
+  box-sizing: border-box;
+  }
+body {
       font-family: Georgia, serif;
       margin: 0;
       color: #f5f5f5;
@@ -59,11 +62,14 @@
     }
 
     .hero {
+      
       padding: 60px 40px;
       background: #16213e;
     }
 
     .avatar {
+      display: block;
+      margin: 0 auto;
       width: 120px;
       height: 120px;
       border-radius: 50%;
@@ -71,13 +77,14 @@
     }
 
     .class-badge {
-      display: inline-block;
+      display: block;
+      margin: 8px auto;    
+      width: fit-content;
       background: #a5263b;
       padding: 4px 12px;
       border-radius: 20px;
       font-size: 0.85rem;
       margin-top: 8px;
-      /* Error: texto de badge también con bajo contraste */
       color: #fcfcfc;
     }
 
@@ -190,3 +197,68 @@
       font-size: 1rem;
     }
 
+    .hero-text {
+      text-align: center;
+      font-size: 2.5rem; 
+      font-weight: bold; 
+      color: #e94560;
+    }
+
+    .hero-bio {
+      margin-top: 16px; 
+      max-width: 600px;
+      text-align: center;   
+      margin-left: auto;    
+      margin-right: auto;
+    }
+
+    .skill-name {
+      font-size: 1.1rem; 
+      font-weight: bold; 
+      color: #f7b7c1;
+    }
+
+    .challenge-intro {
+      margin-bottom: 24px; 
+      max-width: 600px;
+    }
+
+    .hero-meta {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .hero-meta dt {
+        margin-top: 16px;
+      color: #e27a8b;
+    }
+
+    .hero-meta dd {
+      margin-bottom: 8px;
+      margin-left: 0;
+    }
+
+    .stat-card img {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;  
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;  
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
